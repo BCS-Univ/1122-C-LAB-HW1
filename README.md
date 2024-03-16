@@ -108,8 +108,27 @@ int main() {
 }
 ```
 
-## 12
+## 12. What are the Constructors and Destructors? As program to call the constructor and destructor.
+**Constructors** initialize objects when created. **Destructors** clean up resources when objects are destroyed.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Demo {
+public:
+    Demo() { // Constructor
+        cout << "Constructor called." << endl;
+    }
+    ~Demo() { // Destructor
+        cout << "Destructor called." << endl;
+    }
+};
+
+int main() {
+    Demo obj;
+    return 0;
+}
+```
 
 ## 13
-
-## 14
