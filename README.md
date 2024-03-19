@@ -1,7 +1,8 @@
 # C++ Lab HW1
 
 ## 1. What is the meaning of object-oriented programming (OOP)? Write only the name of four
-key concepts of (OOP). 
+A software design approach based on using objects to represent data and methods, emphasizing encapsulation, inheritance, and polymorphism.
+
 Four key concepts of OOP are:
 1. Encapsulation
 2. Inheritance
@@ -55,8 +56,7 @@ int main() {
 
 3. **Logical NOT (`!`)**: Returns `true` if the operand is false; otherwise, returns `false`.
 
-## 7. What are nested loops? Write a program to print the series: (1, 1) (1, 2) (1, 3), (2, 1) (2, 2) (2,
-3), and (3, 1) (3, 2) (3, 3).
+## 7. What are nested loops? Write a program to print the series: (1, 1) (1, 2) (1, 3), (2, 1) (2, 2) (2,3), and (3, 1) (3, 2) (3, 3).
 Nested loops are loops within loops. They allow you to perform complex iterations where each loop may depend on the counters of the outer loops.
 
 ```cpp
@@ -93,6 +93,8 @@ An **object** is an instance of a class, containing data and methods to manipula
 - **Static variables**: Shared across all instances of a class.
 
 ## 11. What is a function, and why is it used in programming? Write a program to call a function for adding two numbers.
+function is a block of code that performs a specific task. It is used to organize code, improve readability, and promote reusability.
+
 ```cpp
 #include <iostream>
 
@@ -131,4 +133,21 @@ int main() {
 }
 ```
 
-## 13
+## 13. Write a program to calculate whether 153 is a Amstrong number or not.
+```cpp
+#include <iostream> #include <cstdlib> using namespace std;
+int main() {
+    int a, b, c, d, e;
+    for (a = 1; a < 9; a++) { for (b = 0; b < 9; b++) {
+        for (c = 0; c < 9; c++) {
+            d = c * c * c + b * b * b + a * a * a; e = 100 * a + 10 * b + c;
+            if (d == e && e == 153) {
+            cout << e << " is an Armstrong number." << endl;
+            return 0; }
+        } }
+    }
+    cout << "153 is not an Armstrong number." << endl;
+    system("pause");
+    return 0; 
+}
+```
